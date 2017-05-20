@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://I://afc-core/afc-core.iml" filepath="I://afc-core/afc-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/afc.core.iml" filepath="$PROJECT_DIR$/afc.core.iml" />
     </modules>
   </component>
 </project>
