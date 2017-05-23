@@ -1,9 +1,7 @@
 package org.siliconeditch.afc.core
 
-fun main(args: Array<String>) {
-    println("Hello, World!")
-}
+import org.siliconeditch.afc.core.players.BeatlePlayer
 
-fun sas(): Int {
-    return 1
+fun main(args: Array<String>) {
+    val player = BeatlePlayer(0)
 }
