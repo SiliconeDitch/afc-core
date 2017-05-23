@@ -76,6 +76,7 @@
                     </execution>
                 </executions>
             </plugin>
+<<<<<<< HEAD
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -85,10 +86,43 @@
                     <archive>
                         <manifest>
                             <mainClass>com.devcolibri.core.Main</mainClass>
+=======
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>org.siliconeditch.afc.core.MainKt</mainClass>
+>>>>>>> a1faa2385de9979ae53fa7986741b3725ebed2f0
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
+<<<<<<< HEAD
+=======
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+>>>>>>> a1faa2385de9979ae53fa7986741b3725ebed2f0
         </plugins>
     </build>
 
